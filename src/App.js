@@ -15,6 +15,7 @@ import Careers, { careersLoader } from './pages/careers/Careers'
 import CareersLayout from './layouts/CareersLayout';
 import CareerDetails, { careerDetailsLoader } from './pages/careers/CareerDetails';
 import CareersError from './pages/careers/CareersError';
+// import Footer from './pages/Footer';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -50,6 +51,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      {/* <Footer></Footer> */}
     </>
   );
 }
