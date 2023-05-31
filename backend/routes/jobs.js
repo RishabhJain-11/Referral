@@ -1,15 +1,15 @@
 const express = require('express')
 const {
-    getWorkouts,
-    getWorkout
-} = require('../controllers/workoutController')
+    getJobs,
+    getJob
+} = require('../controllers/jobController')
 
 const router = express.Router()
 
 // GET all workouts
-router.get('/', getWorkouts)
+router.get('/', getJobs)
 
 // GET a single workout
-router.get('/:id', getWorkout)
+router.get('/:id', getJob)
 
 module.exports = router

@@ -21,3 +21,5 @@ controllers
 
 
 { _id, UniqId, CrawlTimestamp, JobTitle, JobSalary, JobExperienceRequired, KeySkills, RoleCategory, Location, FunctionalArea, Industry, Role }
+
+    // const { _id, UniqId, CrawlTimestamp, JobTitle, JobSalary, JobExperienceRequired, KeySkills, RoleCategory, Location, FunctionalArea, Industry, Role } = req.body;

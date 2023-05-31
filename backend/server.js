@@ -3,16 +3,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT;
-
-mongoose.connect("mongodb://0.0.0.0:27017/jobsapi")
-    .then(() => {
-        console.log("Connected to DB")
-    })
-    .catch((e) => {
-        console.log(e.message);
-    })
-
-const workoutRoutes = require('./routes/workouts');
+const jobRoutes = require('./routes/jobs');
 
 // middleware
 app.use(express.json());
@@ -22,10 +13,14 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use('/api/workouts', workoutRoutes);
+app.use('/api/jobs', jobRoutes);
 
-
-
-app.listen(port, () => {
-    console.log(`Connected to port 3000`)
-})
+mongoose.connect("mongodb://0.0.0.0:27017/jobsapi")
+    .then(() => {
+        app.listen(port, () => {
+            console.log(`Connected to port 3000`)
+        })
+    })
+    .catch((e) => {
+        console.log(e.message);
+    })
