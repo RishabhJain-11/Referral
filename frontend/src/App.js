@@ -15,7 +15,9 @@ import Careers, { careersLoader } from './pages/careers/Careers'
 import CareersLayout from './layouts/CareersLayout';
 import CareerDetails, { careerDetailsLoader } from './pages/careers/CareerDetails';
 import CareersError from './pages/careers/CareersError';
-import GoogleAuth from './GoogleAuth';
+import SignUp from './pages/Signup';
+import Login from './pages/Login';
+// import GoogleAuth from './GoogleAuth';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +29,11 @@ const router = createBrowserRouter(
         <Route path='faq' element={<Faq />} />
         <Route path='contact' element={<Contact />} />
       </Route>
-      <Route path='auth' element={<GoogleAuth />} />
+
+      {/* <Route path='auth' element={<GoogleAuth />} /> */}
+      <Route path="signup" element={<SignUp />} />
+      <Route path="login" element={<Login />} />
+
       <Route path="careers" element={<CareersLayout />} errorElement={<CareersError />}>
         <Route
           index

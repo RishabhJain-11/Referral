@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+/* eslint-disable-next-line */
 
 :root {
   --primary: #bc4123;
@@ -42,7 +47,7 @@ button {
 header nav {
   display: flex;
   gap: 16px;
-  justify-content: end;
+  justify-content: flex-end;
   max-width: 1200px;
   margin: 0 auto;
 }

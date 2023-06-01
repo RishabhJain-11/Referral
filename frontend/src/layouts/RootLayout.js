@@ -11,6 +11,8 @@ export default function RootLayout() {
                     <NavLink to="careers">Jobs</NavLink>
                     <NavLink to="about">About Us</NavLink>
                     <NavLink to="help">Help</NavLink>
+                    <NavLink to="signup">SignUp</NavLink>
+                    <NavLink to="login">Login</NavLink>
                 </nav>
                 <Breadcrumbs />
             </header>

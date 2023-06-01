@@ -1,7 +1,0 @@
-Mongo DB ke andar docs banana hai aur 
-usko access karna hai
-
-Express app ke andar via api calls karna
-hai 
-
-jo bhi hum documents banayenge toh use hame access karna

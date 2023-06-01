@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import { facebook, instagram, twitter, play, } from '../assets';
+import { facebook, instagram, twitter, play } from '../assets';
 
 
 export default function Home() {
@@ -15,13 +15,10 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="container">
-                    <nav>
-                        <img src={logo} className="logo" />
-                    </nav>
                     <img src={play} className="play" />
                     <div className="info">
                         <h2>Career Growth</h2>
-                        <h4>Winter dresses for women by AND are a seamless blend of fashion and <br />functionality.Shop our
+                        <h4>Winter dresses for men by AND are a seamless blend of fashion and <br />functionality.Shop our
                             elegant range of winter wear.</h4>
 
                         <div className="row indicator">
