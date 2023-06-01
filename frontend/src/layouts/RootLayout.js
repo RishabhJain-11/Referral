@@ -1,6 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom"
 import Breadcrumbs from "../components/BreadCrumbs"
-import Footer from "../pages/Footer"
+
 export default function RootLayout() {
     return (
         <div className="root-layout">

@@ -6,29 +6,23 @@ export default function Contact() {
 
     return (
         <>
-            <div className="container contact">
+            <div className="contact">
                 <Form method="post" action="/help/contact">
 
                     <div className="input-group">
-                        <label>Full Name : </label>
+                        <label>Full Name</label>
                         <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validate" required />
                         <span id="name-error"></span>
                     </div>
 
                     <div className="input-group">
-                        <label>Phone No. : </label>
-                        <input type="tel" placeholder="123 456 7890" />
-                        <span id="phone-error"></span>
-                    </div>
-
-                    <div className="input-group">
-                        <label>Email Id : </label>
+                        <label>Email Id</label>
                         <input type="email" placeholder="Enter Email" required />
                         <span id="email-error"></span>
                     </div>
 
                     <div className="input-group">
-                        <label>Your Message : </label>
+                        <label>Your Message</label>
                         <textarea rows="5" placeholder="Enter your message"></textarea>
                         <span id="message-error"></span>
                     </div>

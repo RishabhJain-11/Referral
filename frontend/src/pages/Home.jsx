@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import { facebook, instagram, twitter, play, logon, logo } from '../assets';
+import { facebook, instagram, twitter, play, } from '../assets';
 
 
 export default function Home() {
@@ -8,8 +8,6 @@ export default function Home() {
         <>
             <div className="headerer">
                 <div className="sidebar">
-                    {/* <img src={menu} alt="" />
-                    <img src={search} alt="" /> */}
                     <div className="social">
                         <a href="https://facebook.com"><img src={facebook} alt="" /></a>
                         <a href="https://instagram.com"><img src={instagram} alt="" /></a>
@@ -19,14 +17,12 @@ export default function Home() {
                 <div className="container">
                     <nav>
                         <img src={logo} className="logo" />
-                        {/* <img src={shop} className="shop" /> */}
                     </nav>
                     <img src={play} className="play" />
                     <div className="info">
-                        <h3>Ready for</h3>
-                        <h1>Career Growth</h1>
-                        <p>Winter dresses for women by AND are a seamless blend of fashion and <br />functionality.Shop our
-                            elegant range of winter wear.</p>
+                        <h2>Career Growth</h2>
+                        <h4>Winter dresses for women by AND are a seamless blend of fashion and <br />functionality.Shop our
+                            elegant range of winter wear.</h4>
 
                         <div className="row indicator">
                             <p>03</p>
@@ -38,11 +34,11 @@ export default function Home() {
                         <div className="row">
                             <div>
                                 <h2>SPRING COLLECTION</h2>
-                                <p>Winter Dresses for Women are a seamless <br />blend of fashion.</p>
+                                <h4>Winter Dresses for Women are a seamless <br />blend of fashion.</h4>
                             </div>
                             <div>
                                 <h2>TRENDING</h2>
-                                <p>Winter Dresses for Women are a seamless <br />blend of fashion.</p>
+                                <h4>Winter Dresses for Women are a seamless <br />blend of fashion.</h4>
                             </div>
                         </div>
                     </div>

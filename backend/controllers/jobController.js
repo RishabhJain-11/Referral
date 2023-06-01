@@ -8,16 +8,25 @@ const getJobs = async (req, res) => {
     res.status(200).json(jobs)
 }
 
+
 // get a single job
 const getJob = async (req, res) => {
-    theid = ObjectId.toString(req.params.id);
-    Job.find(({ id: theid }))
-        .then((id) => {
-            res.json(id);
-        })
-        .catch((err) => {
-            console.log(err)
-        })
+    const { id } = req.params;
+    const objID = new mongoose.Types.ObjectId();
+    const objectIdString = objID.toString();
+
+    if (!mongoose.Types.ObjectId.isValid(objectIdString)) {
+        return res.status(404).json({ error: 'No such workout' })
+    }
+
+    const job = await Job.findById(objectIdString);
+
+    if (!job) {
+        return res.status(404).json({ error: 'No such workout' })
+    }
+
+    res.status(200).send(job)
+
 }
 
 module.exports = {
