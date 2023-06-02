@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
-import { facebook, instagram, twitter, play } from '../assets';
-
+import { facebook, instagram, twitter, play, mainlogo } from '../assets';
 
 export default function Home() {
     return (
@@ -15,6 +14,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="container">
+                    <nav>
+                        <img src={mainlogo} className="logo" />
+                    </nav>
                     <img src={play} className="play" />
                     <div className="info">
                         <h2>Career Growth</h2>

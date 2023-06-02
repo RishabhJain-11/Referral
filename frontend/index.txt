@@ -45,3 +45,44 @@ form label span {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt atque fugiat expedita esse veniam unde blanditiis rerum culpa voluptatum magni, laborum labore eligendi. Quis at ad corporis voluptates ipsam illum aperiam. Provident ipsa dolore consequuntur tempora, quidem consequatur tempore quibusdam, maxime sequi corrupti consectetur sapiente magnam autem, vero laboriosam.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt atque fugiat expedita esse veniam unde blanditiis rerum culpa voluptatum magni, laborum labore eligendi. Quis at ad corporis voluptates ipsam illum aperiam. Provident ipsa dolore consequuntur tempora, quidem consequatur tempore quibusdam, maxime sequi corrupti consectetur sapiente magnam autem, vero laboriosam.</p>
         </div>
+
+
+************************************************************************************************************************************************************************
+
+
+// export default function Faq() {
+//     return (
+//         <div className="faq">
+//             <h3>Frequently Asked Questions</h3>
+
+//             <div className="question">
+//                 <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
+//             </div>
+
+//             <div className="question">
+//                 <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
+//             </div>
+
+//             <div className="question">
+//                 <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
+//             </div>
+
+//             <div className="question">
+//                 <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
+//             </div>
+
+//             <div className="question">
+//                 <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
+//             </div>
+
+//         </div>
+//     )
+// }
+
+https://www.youtube.com/watch?v=GVjIflROwJ4
+https://github.com/thehyperart11/Restaurant-Landing-Page-Tutorial/tree/main/src/Components

@@ -20,7 +20,7 @@ import Login from './pages/Login';
 // import GoogleAuth from './GoogleAuth';
 
 const router = createBrowserRouter(
-  createRoutesFromElements(
+  createRoutesFromElements( 
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />

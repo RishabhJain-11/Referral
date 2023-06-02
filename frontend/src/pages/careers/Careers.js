@@ -25,3 +25,16 @@ export const careersLoader = async () => {
 
     return res.json()
 }
+
+/**
+ * UP
+ * Rajasthan
+ * Madhaya Pradesh
+ * Bihar
+ * Jharkhand
+ * Chhattisgarh
+ * Uttrakhand
+ * Haryana
+ * Himachal
+ * Delhi
+ */
