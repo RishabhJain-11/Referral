@@ -11,7 +11,7 @@ import HelpLayout from './layouts/HelpLayout';
 import Faq from './pages/help/Faq'
 import Contact from './pages/help/Contact'
 import NotFound from './pages/NotFound';
-import Careers, { careersLoader } from './pages/careers/Careers'
+import Careers from './pages/careers/Careers'
 import CareersLayout from './layouts/CareersLayout';
 import CareerDetails, { careerDetailsLoader } from './pages/careers/CareerDetails';
 import CareersError from './pages/careers/CareersError';
@@ -34,17 +34,17 @@ const router = createBrowserRouter(
       <Route path="signup" element={<SignUp />} />
       <Route path="login" element={<Login />} />
 
-      <Route path="careers" element={<CareersLayout />} errorElement={<CareersError />}>
+      <Route path="/api/jobs" element={<CareersLayout />} errorElement={<CareersError />}>
         <Route
           index
           element={<Careers />}
-          loader={careersLoader}
+          // loader={careersLoader}
         />
 
         <Route
           path=':id'
           element={<CareerDetails />}
-          loader={careerDetailsLoader}
+          // loader={careerDetailsLoader}
         />
       </Route>
 

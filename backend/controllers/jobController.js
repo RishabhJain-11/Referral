@@ -11,22 +11,19 @@ const getJobs = async (req, res) => {
 
 // get a single job
 const getJob = async (req, res) => {
-    const { id } = req.params;
-    const objID = new mongoose.Types.ObjectId();
-    const objectIdString = objID.toString();
+    const { id } = req.params
 
-    if (!mongoose.Types.ObjectId.isValid(objectIdString)) {
-        return res.status(404).json({ error: 'No such workout' })
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({ error: 'No such job' })
     }
 
-    const job = await Job.findById(objectIdString);
+    const job = await Job.findById(id)
 
     if (!job) {
-        return res.status(404).json({ error: 'No such workout' })
+        return res.status(404).json({ error: 'No such job' })
     }
 
-    res.status(200).send(job)
-
+    res.status(200).json(job)
 }
 
 module.exports = {

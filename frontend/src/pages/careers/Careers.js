@@ -1,30 +1,47 @@
-import { Link, useLoaderData } from "react-router-dom"
+import { useEffect, useState } from "react";
 
-export default function Careers() {
-    const careers = useLoaderData()
+const Careers = () => {
+
+    const [jobs, setJobs] = useState(null);
+
+    useEffect(() => {
+        const fetchJobs = async () => {
+            const response = await fetch("/api/jobs");
+            const json = await response.json();
+
+            if (response.ok) {
+                setJobs(json);
+            }
+        }
+        fetchJobs();
+    }, []);
 
     return (
-        <div className="careers">
-            {careers.map(career => (
-                <Link to={career.id.toString()} key={career.id}>
-                    <p>{career.title}</p>
-                    <p>Based in {career.location}</p>
-                </Link>
-            ))}
-        </div>
+        <>
+            <div className="careers">
+                {jobs && jobs.map((job) => (
+                    <>
+                        <br />
+                        <br />
+                        <br />
+                        <h2 key={job._id}>Career Details for {job.jobTitle}</h2>
+                        <p key={job._id}>Starting salary: {job.jobSalary}</p>
+                        <p key={job._id}>Location: {job.location} </p>
+                        <p key={job._id}>Experience: {job.exp} </p>
+                        <p key={job._id}>Role: {job.role} </p>
+                        <p key={job._id}>Industry Related: {job.industry} </p>
+                        <br />
+                        <br />
+                        <br />
+                    </>
+                ))}
+                
+            </div>
+        </>
     )
 }
 
-// data loader
-export const careersLoader = async () => {
-    const res = await fetch('http://localhost:4000/careers')
-
-    if (!res.ok) {
-        throw Error('Could not fetch the list of careers')
-    }
-
-    return res.json()
-}
+export default Careers
 
 /**
  * UP
