@@ -18,7 +18,7 @@ app.use('/api/jobs', jobRoutes);
 mongoose.connect("mongodb://0.0.0.0:27017/jobsapi")
     .then(() => {
         app.listen(port, () => {
-            console.log(`Connected to port 3000`)
+            console.log(`Connected to port ${port}`)
         })
     })
     .catch((e) => {

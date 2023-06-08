@@ -8,7 +8,7 @@ export default function RootLayout() {
                 <nav>
                     <h1>Referral</h1>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="careers">Jobs</NavLink>
+                    <NavLink to="api/jobs">Jobs</NavLink>
                     <NavLink to="about">About Us</NavLink>
                     <NavLink to="help">Help</NavLink>
                     <NavLink to="signup">SignUp</NavLink>

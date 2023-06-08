@@ -86,3 +86,90 @@ form label span {
 
 https://www.youtube.com/watch?v=GVjIflROwJ4
 https://github.com/thehyperart11/Restaurant-Landing-Page-Tutorial/tree/main/src/Components
+
+***************************
+
+{/* <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <div className="flex lg:flex-1">
+                        <a href="/" className="-m-1.5 p-1.5">
+                            <span className="sr-only">Your Company</span>
+                            <img
+                                className="h-8 w-auto"
+                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <div className="flex lg:hidden">
+                        <button
+                            type="button"
+                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                            onClick={() => setMobileMenuOpen(true)}
+                        >
+                            <span className="sr-only">Open main menu</span>
+                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        </button>
+                    </div>
+                    <div className="hidden lg:flex lg:gap-x-12">
+                        {navigation.map((item) => (
+                            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                                {item.name}
+                            </a>
+                        ))}
+                    </div>
+                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+                            Log in <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </nav> */}
+                Bars3Icon
+
+// /* eslint-disable jsx-a11y/alt-text */
+// import React from 'react'
+// import { facebook, instagram, twitter, play, mainlogo } from '../assets';
+
+// export default function Home() {
+//     return (
+//         <>
+//             <div className="headerer">
+//                 <div className="sidebar">
+//                     <div className="social">
+//                         <a href="https://facebook.com"><img src={facebook} alt="" /></a>
+//                         <a href="https://instagram.com"><img src={instagram} alt="" /></a>
+//                         <a href="https://twitter.com"><img src={twitter} alt="" /></a>
+//                     </div>
+//                 </div>
+//                 <div className="container">
+//                     <nav>
+//                         <img src={mainlogo} className="logo" />
+//                     </nav>
+//                     <img src={play} className="play" />
+//                     <div className="info">
+//                         <h2>Career Growth</h2>
+//                         <h4>Winter dresses for men by AND are a seamless blend of fashion and <br />functionality.Shop our
+//                             elegant range of winter wear.</h4>
+
+//                         <div className="row indicator">
+//                             <p>03</p>
+//                             <div className="line">
+//                                 <span></span>
+//                             </div>
+//                             <p>07</p>
+//                         </div>
+//                         <div className="row">
+//                             <div>
+//                                 <h2>SPRING COLLECTION</h2>
+//                                 <h4>Winter Dresses for Women are a seamless <br />blend of fashion.</h4>
+//                             </div>
+//                             <div>
+//                                 <h2>TRENDING</h2>
+//                                 <h4>Winter Dresses for Women are a seamless <br />blend of fashion.</h4>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </>
+//     )
+// }
