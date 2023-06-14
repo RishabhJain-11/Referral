@@ -13,7 +13,7 @@ import Contact from './pages/help/Contact'
 import NotFound from './pages/NotFound';
 import Careers from './pages/careers/Careers'
 import CareersLayout from './layouts/CareersLayout';
-import CareerDetails from './pages/careers/CareerDetails';
+// import CareerDetails from './pages/careers/CareerDetails';
 import CareersError from './pages/careers/CareersError';
 import SignUp from './pages/Signup';
 import Login from './pages/Login';
@@ -41,11 +41,11 @@ const router = createBrowserRouter(
           // loader={careersLoader}
         />
 
-        <Route
+        {/* <Route
           path='/api/jobs/:id'
           element={<CareerDetails />}
           // loader={careerDetailsLoader}
-        />
+        /> */}
       </Route>
 
       <Route path='*' element={<NotFound />}></Route>

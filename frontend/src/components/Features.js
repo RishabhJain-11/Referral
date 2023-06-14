@@ -1,30 +1,30 @@
 import React from 'react'
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { ChatBubbleBottomCenterIcon, HandRaisedIcon, CubeTransparentIcon, CalendarDaysIcon } from '@heroicons/react/24/outline'
 
 const features = [
     {
-        name: 'Push to deploy',
+        name: 'Improve your skills up to date',
         description:
-            'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-        icon: CloudArrowUpIcon,
+            'Due to advent of AI the skills can be achieved in no time, digitization of services and the economy can help in getting knowledge from foriegn sources as well.',
+        icon: CalendarDaysIcon,
     },
     {
-        name: 'SSL certificates',
+        name: 'Keep your fundamentals strong',
         description:
-            'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-        icon: LockClosedIcon,
+            'The base need to be as strong as any other skills, inorder to get a good job, fundamentals should be strong.',
+        icon: CubeTransparentIcon,
     },
     {
-        name: 'Simple queues',
+        name: 'Make helpful connections',
         description:
-            'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-        icon: ArrowPathIcon,
+            'Connections and taking help from the experienced people is the best decision you can ever do.',
+        icon: ChatBubbleBottomCenterIcon,
     },
     {
-        name: 'Advanced security',
+        name: 'Improve your social profile',
         description:
-            'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-        icon: FingerPrintIcon,
+            'Social Media platforms such as LinkedIn, Twitter, Medium, etc you can make a brand of yourself.',
+        icon: HandRaisedIcon,
     },
 ]
 
@@ -36,11 +36,11 @@ const Features = () => {
                 <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Everything you need to deploy your app
+                        Everything you need to get your dream job
                     </p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-                        pulvinar et feugiat blandit at. In mi viverra elit nunc.
+                        Market needs skills that can do work in the market in a more productive way and can keep up to the pace of the industry requirements. <br /> <br />
+                        Steps needed to be taken as a job seeker
                     </p>
                 </div>
                 <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
