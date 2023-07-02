@@ -4,8 +4,8 @@ export default function HelpLayout() {
     return (
         <div className="help-layout">
 
-            <h2>Website Help</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quas debitis quibusdam deserunt repellat hic molestias ipsum commodi aut odit!</p>
+            <h2>Need Help</h2><br />
+            <p>If you still have any query please do check out the Frequently Asked Questions or best you can contact us and ask any question related. Thank you :)</p>
 
             <nav>
                 <NavLink to="faq">View the FAQ</NavLink>

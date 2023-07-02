@@ -10,12 +10,11 @@ const Contact = () => {
         <section className="text-gray-700 body-font relative">
           <div className="px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              {/* <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-500">
                 Contact Us
-              </h1> */}
+              </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify.
+                Once your query is posted it will be answered in 5 working days.
               </p>
             </div>
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -70,7 +69,7 @@ const Contact = () => {
                   </button>
                 </div>
                 <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a className="text-indigo-500">im.rishabhmjain@gmail.com</a>
+                  <a href='@im.rishabhmjain@gmail.com' className="text-emerald-500 font-bold">im.rishabhmjain@gmail.com</a>
                   <p className="leading-normal my-5">
                     Pradhikaran, Pune
                     <br />
