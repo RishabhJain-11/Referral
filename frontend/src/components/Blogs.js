@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const posts = [
     {
@@ -18,7 +19,7 @@ const posts = [
                 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
     },
-    
+
     {
         id: 2,
         title: 'Boost your conversion rate',
@@ -36,7 +37,7 @@ const posts = [
                 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
     },
-    
+
     {
         id: 3,
         title: 'Boost your conversion rate',
@@ -103,6 +104,14 @@ const Blogs = () => {
                             </div>
                         </article>
                     ))}
+                </div>
+                <div className="align-center">
+                    <div className="mt-10 flex items-center justify-center gap-x-6">
+                        <Link to={`/api/jobs`} className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Browse More Blogs</Link>
+                        <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+                            Write a blog <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

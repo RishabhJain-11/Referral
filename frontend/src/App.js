@@ -13,14 +13,17 @@ import Contact from './pages/help/Contact'
 import NotFound from './pages/NotFound';
 import Careers from './pages/careers/Careers'
 import CareersLayout from './layouts/CareersLayout';
-// import CareerDetails from './pages/careers/CareerDetails';
 import CareersError from './pages/careers/CareersError';
 import SignUp from './pages/Signup';
 import Login from './pages/Login';
+// import Interact from './pages/Interact';
+import Resources from './pages/Resources';
+import Blogs from './components/Blogs';
+// import CareerDetails from './pages/careers/CareerDetails';
 // import GoogleAuth from './GoogleAuth';
 
 const router = createBrowserRouter(
-  createRoutesFromElements( 
+  createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
@@ -30,6 +33,10 @@ const router = createBrowserRouter(
         <Route path='contact' element={<Contact />} />
       </Route>
 
+      {/* <Route path="interact" element={<Interact />} /> */}
+      <Route path="blogs" element={<Blogs />} />
+      <Route path="resources" element={<Resources />} />
+
       {/* <Route path='auth' element={<GoogleAuth />} /> */}
       <Route path="signup" element={<SignUp />} />
       <Route path="login" element={<Login />} />
@@ -38,7 +45,7 @@ const router = createBrowserRouter(
         <Route
           index
           element={<Careers />}
-          // loader={careersLoader}
+        // loader={careersLoader}
         />
 
         {/* <Route
@@ -57,9 +64,8 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      {/* <Footer></Footer> */}
     </>
   );
 }
 
-export default App
+export default App;

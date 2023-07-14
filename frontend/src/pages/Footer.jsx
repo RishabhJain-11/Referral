@@ -9,10 +9,11 @@ export default function Footer() {
                         <div class="mb-6 md:mb-0">
                             <a href="https://flowbite.com/" class="flex items-center">
                                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
-                                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rishabh Jain</span>
+                                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rishabh Jain Company</span>
                             </a>
+                            {/* <p className='mt-7 flex-wrap'>Lorem ipsum dolor sit amet consectetur addvkma;fva;fvm;kmlfmalkmvfvmkf</p> */}
                         </div>
-                        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-5">
                             <div>
                                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                                 <ul class="text-gray-600 dark:text-gray-400 font-medium">
@@ -48,6 +49,42 @@ export default function Footer() {
                                     </li>
                                 </ul>
                             </div>
+
+                            <div>
+                                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                                <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Telegram</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Whatsapp</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                                <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Telegram</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Whatsapp</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <div>
                                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                                 <ul class="text-gray-600 dark:text-gray-400 font-medium">
@@ -62,7 +99,10 @@ export default function Footer() {
                                     </li>
                                 </ul>
                             </div>
+
+
                         </div>
+
                     </div>
                     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                     <div class="sm:flex sm:items-center sm:justify-between">
