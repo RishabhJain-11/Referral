@@ -10,7 +10,8 @@ const jobSchema = new Schema({
     Location: String, // Location(s) where the job is available
     Industry: String, // Industry associated with the job (e.g., Insurance)
     Role: String, // Role or position (e.g., Sales Officer)
-    Link: String
+    Link: String,
+    Type: String,
 }, { timestamps: true })
 
 module.exports = mongoose.model('jobs', jobSchema)
