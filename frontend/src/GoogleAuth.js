@@ -1,4 +1,5 @@
-import firebase from './firebaseConfig';
+import firebase from 'firebase/app';
+import 'firebase/auth'
 import React from 'react';
 
 const GoogleAuth = () => {

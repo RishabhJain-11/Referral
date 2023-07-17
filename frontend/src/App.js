@@ -19,8 +19,10 @@ import Login from './pages/Login';
 // import Interact from './pages/Interact';
 import Resources from './pages/Resources';
 import Blogs from './components/Blogs';
+import Blogger from './components/Blogger';
 // import CareerDetails from './pages/careers/CareerDetails';
 // import GoogleAuth from './GoogleAuth';
+import { AuthProvider } from './context/AuthContext';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -36,10 +38,11 @@ const router = createBrowserRouter(
       {/* <Route path="interact" element={<Interact />} /> */}
       <Route path="blogs" element={<Blogs />} />
       <Route path="resources" element={<Resources />} />
-
+      <Route path="blogger" element={<Blogger />} />
+      
       {/* <Route path='auth' element={<GoogleAuth />} /> */}
-      <Route path="signup" element={<SignUp />} />
-      <Route path="login" element={<Login />} />
+      {/* <Route path="signup" element={<SignUp />} />
+      <Route path="login" element={<Login />} /> */}
 
       <Route path="/api/jobs" element={<CareersLayout />} errorElement={<CareersError />}>
         <Route
@@ -63,7 +66,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
     </>
   );
 }
