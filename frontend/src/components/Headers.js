@@ -2,14 +2,14 @@ import React from 'react'
 
 const Headers = () => {
     const links = [
-        { name: 'Open roles', href: '/api/jobs' },
-        { name: 'Resource Arsenal', href:'/api/jobs'},
-        { name: 'Internship Program', href: '#' },
-        { name: 'Blogs', href: '#' },
+        { name: 'Experience Program', href: '/api/jobs' },
+        { name: 'Resource Arsenal', href:'/material'},
+        { name: 'Blogs', href: '/blogger' },
+        { name: 'Take help', href: '/help' },
     ]
     const stats = [
-        { name: 'MNC Placement', value: '120+' },
-        { name: 'Full-time Partners', value: '300+' },
+        { name: 'Roles Offered via this platform', value: '120+' },
+        { name: 'Blogs and material sources', value: '300+' },
         { name: 'Hackathons Sources', value: '10+' },
         { name: 'Success Rate', value: 'Unlimited' },
     ]

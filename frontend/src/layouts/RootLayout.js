@@ -10,12 +10,9 @@ export default function RootLayout() {
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="api/jobs">Jobs</NavLink>
                     <NavLink to="blogger">Blogs</NavLink>
-                    <NavLink to="resources">Resources</NavLink>
-                    {/* <NavLink to="interact">Interact</NavLink> */}
+                    <NavLink to="material">Resources</NavLink>
                     <NavLink to="about">About Us</NavLink>
                     <NavLink to="help">Help</NavLink>
-                    {/* <NavLink to="signup">SignUp</NavLink>
-                    <NavLink to="login">Login</NavLink> */}
                 </nav>
                 <Breadcrumbs />
             </header>

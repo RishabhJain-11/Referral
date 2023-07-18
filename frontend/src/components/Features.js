@@ -11,7 +11,7 @@ const features = [
     {
         name: 'Keep your fundamentals strong',
         description:
-            'The base need to be as strong as any other skills, inorder to get a good job, fundamentals should be strong.',
+            'The base need to be as strong as any other skills, in order to get a good job, fundamentals should be strong.',
         icon: CubeTransparentIcon,
     },
     {

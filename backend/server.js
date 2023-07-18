@@ -4,7 +4,8 @@ const app = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT;
 const jobRoutes = require('./routes/jobs');
-const authRoutes = require("./routes/auth")
+const materialRoutes = require('./routes/material')
+const blogRoutes = require('./routes/blogs')
 
 // middleware
 app.use(express.json());
@@ -15,7 +16,8 @@ app.use((req, res, next) => {
 })
 
 app.use('/api/jobs', jobRoutes);
-app.use('/auth', authRoutes);
+app.use('/api/material', materialRoutes);
+app.use('/api/blog', blogRoutes);
 
 mongoose.connect("mongodb://0.0.0.0:27017/jobsapi")
     .then(() => {

@@ -19,18 +19,6 @@ const Home = () => {
             <p className='border-t border-gray-200'></p>
             <Headers />
             <p className='border-t border-gray-200'></p>
-            {/* <LogoCloud />
-            <p className='border-t border-gray-200'></p> */}
-            {/* <Stats />
-            <p className='border-t border-gray-200'></p> */}
-            <Blogs />
-            <p className='border-t border-gray-200'></p>
-            {/* <Testimonials />
-            <p className='border-t border-gray-200'></p> */}
-            {/* <Teams />
-            <p className='border-t border-gray-200'></p> */}
-            <NewsLetter />
-            <p className='border-t border-gray-200'></p>
             <Footer />
         </>
     )

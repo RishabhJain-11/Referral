@@ -10,6 +10,7 @@ import bg3 from './bg3.jpg'
 import sidelogo from './side-logo.png'
 import mainlogo from './main-logo.png'
 import imager from './rishabhj.jpeg'
+import minelogo from './minelogo.png';
 
 export {
     facebook,
@@ -23,5 +24,6 @@ export {
     bg3,
     sidelogo,
     mainlogo,
-    imager
+    imager,
+    minelogo
 };

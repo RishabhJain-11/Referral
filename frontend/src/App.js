@@ -14,15 +14,15 @@ import NotFound from './pages/NotFound';
 import Careers from './pages/careers/Careers'
 import CareersLayout from './layouts/CareersLayout';
 import CareersError from './pages/careers/CareersError';
-import SignUp from './pages/Signup';
-import Login from './pages/Login';
-// import Interact from './pages/Interact';
-import Resources from './pages/Resources';
 import Blogs from './components/Blogs';
-import Blogger from './components/Blogger';
+import Blogger from './pages/blogs/Blogger';
+import { AuthProvider } from './context/AuthContext';
+import Material from './pages/resources/Material';
+// import Interact from './pages/Interact';
+// import SignUp from './pages/Signup';
+// import Login from './pages/Login';
 // import CareerDetails from './pages/careers/CareerDetails';
 // import GoogleAuth from './GoogleAuth';
-import { AuthProvider } from './context/AuthContext';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -37,7 +37,7 @@ const router = createBrowserRouter(
 
       {/* <Route path="interact" element={<Interact />} /> */}
       <Route path="blogs" element={<Blogs />} />
-      <Route path="resources" element={<Resources />} />
+      <Route path="material" element={<Material />} />
       <Route path="blogger" element={<Blogger />} />
       
       {/* <Route path='auth' element={<GoogleAuth />} /> */}
