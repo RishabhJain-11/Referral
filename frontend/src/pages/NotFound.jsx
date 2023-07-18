@@ -2,24 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function NotFound() {
-    // return (
-    //     <div>
-    //         <h1>Page Not Found</h1>
-    //         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae nobis, placeat eum culpa quas eaque? Eius velit nulla dolorum numquam sunt autem in eum totam?</p>
-    //         <p>Go to home <Link to="/" >HomePage</Link>.</p>
-    //     </div>
-    // )
-
     return (
         <>
-            {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full">
-        <body class="h-full">
-        ```
-      */}
             <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
                 <div className="text-center">
                     <p className="text-base font-semibold text-indigo-600">404</p>

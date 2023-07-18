@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 const materialSchema = new Schema({
-    _id: String, // Unique identifier for the document
+    _id: String,
     img: String,
     title: String,
     author: String,
