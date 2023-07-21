@@ -1,8 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { useRef } from 'react'
 import "tailwindcss/tailwind.css";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_j3tbnc4', 'template_n8p32wx', form.current, 'AVtyMt2Wjg20xddUe')
+      .then((result) => {
+        console.log(result.text);
+        console.log("Successful")
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+
+
   return (
     <>
       <div className='app'>
@@ -16,8 +32,10 @@ const Contact = () => {
                 Once your query is posted it will be answered in 5 working days.
               </p>
             </div>
-            <div className="lg:w-1/2 md:w-2/3 mx-auto">
-              <div className="flex flex-wrap -m-2">
+
+
+            <form className="lg:w-1/2 md:w-2/3 mx-auto">
+              <div className="flex flex-wrap -m-2" ref={form} onSubmit={sendEmail}>
                 <div className="p-2 w-1/2">
                   <div className="relative">
                     <label for="name" className="leading-7 text-sm text-gray-100">
@@ -26,7 +44,7 @@ const Contact = () => {
                     <input
                       type="text"
                       id="name"
-                      name="name"
+                      name="user_name"
                       className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -42,7 +60,7 @@ const Contact = () => {
                     <input
                       type="email"
                       id="email"
-                      name="email"
+                      name="user_email"
                       className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -63,12 +81,17 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="p-2 w-full">
-                  <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                  <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit" value="Send">
                     Submit
                   </button>
                 </div>
+
+
+
+
+
                 <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a href='@im.rishabhmjain@gmail.com' className="text-emerald-500 font-bold">im.rishabhmjain@gmail.com</a>
+                  <a href='@im.rishabhmjain@gmail.com' className="text-white font-bold">im.rishabhmjain@gmail.com</a>
                   <p className="leading-normal my-5">
                     Pradhikaran, Pune
                     <br />
@@ -135,7 +158,7 @@ const Contact = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </section>
       </div>

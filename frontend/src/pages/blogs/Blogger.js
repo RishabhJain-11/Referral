@@ -116,7 +116,7 @@ const Blogger = () => {
                 <div className="ml-auto">
                     <input
                         type="text"
-                        placeholder="Search BLogs..."
+                        placeholder="Search Blogs..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="mt-4 p-2 border text-black border-gray-300 rounded-lg"
